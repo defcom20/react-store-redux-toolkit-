@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/open-sans-v29-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('/fonts/open-sans-v29-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/open-sans-v29-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/open-sans-v29-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/open-sans-v29-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/open-sans-v29-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+
+.side-btn-hover{
+    @apply py-2 shadow-lg rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-purple-200;
+  }
+  .side-btn-config{
+    @apply py-2 shadow-lg rounded-xl bg-white text-pink-600 border border-pink-500 shadow-pink-200;
+  }
+
+  .error-input-text{
+    @apply text-red-600 font-opensas text-xs;
+  }
+
+
+.style-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.style-scrollbar::-webkit-scrollbar-thumb {
+    background: #e5e7eb !important;
+    border-radius: 50px !important;
+}
+
+.style-scrollbar::-webkit-scrollbar-track {
+    background-color: #fff !important;
+}
+.style-scrollbar-g::-webkit-scrollbar {
+    width: 6px;
+}
+
+.style-scrollbar-g::-webkit-scrollbar-thumb {
+    background: #a855f7 !important;
+    border-radius: 50px !important;
+}
+
+.style-scrollbar-g::-webkit-scrollbar-track {
+    background-color: #fff !important;
+}
+
+.h-sidenav {
+    height: calc(100vh - 195px);
+}
+
+.h-body{
+    height: calc(100vh - 100px);
+}
+
+.inset-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+html {
+    line-height: 1.5 !important;
+    -webkit-text-size-adjust: 100% !important;
+    -moz-tab-size: 4 !important;
+    -o-tab-size: 4;
+    tab-size: 4 !important;
+    color: #9ca3af;
+}
